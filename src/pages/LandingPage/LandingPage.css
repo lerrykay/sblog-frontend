@@ -1,0 +1,188 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+
+.text-shadow {
+  text-shadow: 0 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+
+section {
+  transition: all 0.5s ease-in-out;
+}
+
+
+.card {
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.btn {
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(220, 53, 69, 0.5); 
+}
+
+
+.navbar {
+  backdrop-filter: blur(8px);
+  background: rgba(0, 0, 0, 0.85) !important;
+  transition: background 0.3s ease;
+}
+
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+    padding: 0.6rem 1.4rem;
+  }
+}
+
+
+
+.news-section {
+  background: linear-gradient(180deg, #0b132b, #1c2541);
+  color: #fff;
+}
+
+.news-section .card {
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.news-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-section .card-body {
+  background-color: #ffffff;
+  color: #222;
+  padding: 1.5rem;
+}
+
+.news-section h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-section {
+  background: linear-gradient(180deg, #1c2541, #0b132b);
+  color: #fff;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.contact-form .form-label {
+  color: #222;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+.contact-form button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.footer-section {
+  background: linear-gradient(180deg, #0b132b, #1c2541);
+  color: #eee;
+}
+
+.footer-section h4, 
+.footer-section h5 {
+  color: #fff;
+}
+
+.footer-link {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.footer-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 20px;
+}
