@@ -16,12 +16,13 @@ import {
 } from "react-router-dom";
 import LandingPage from "./pages/LandingPage/LandingPage";
 import LoginModal from "./components/LoginModal";
-import SignupModal from "./components/SignUpModal";
+
 import UsersPage from "./components/UsersPage";
 import AuthGuard from "../auth/AuthGuard";
 import BlogList from "./components/BlogList";
 import AdminDashboard from "./components/AdminDashboard";
 import Transfers from "./components/Transfers";
+import SignUpModal from "./components/SignUpModal";
 
 
 const getUser = () => JSON.parse(localStorage.getItem("user"));
@@ -31,15 +32,16 @@ function App() {
 
   return (
     <Router>
-      <SignupModal />
+      <SignUpModal/>
+      
       <LoginModal />
       <Routes>
         
-        <Route path="/landingpage" element={<LandingPage />} />
+        <Route path="/landingpage" element={<LandingPage />}/>
 
       
         <Route path="/loginpage" element={<LoginModal />} />
-        <Route path="/signuppage" element={<SignupModal />} />
+        <Route path="/signuppage" element={<SignUpModal/>} />
 
       
         <Route
@@ -75,9 +77,8 @@ function App() {
           path="/admin"
           element={
             <AuthGuard>
-              {user?.role === "admin" ? (
-                <AdminDashboard />
-              ) : (
+              {user?.role === "admin" ?  (
+                <AdminDashboard />) : (
                 <Navigate to="/landingpage" />
               )}
             </AuthGuard>

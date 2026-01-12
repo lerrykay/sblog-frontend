@@ -4,7 +4,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { useNavigate } from "react-router-dom"; 
 
-const SignupModal = () => {
+const SignUpModal = () => {
   const navigate = useNavigate(); 
 
   const initialValues = {
@@ -239,4 +239,4 @@ const SignupModal = () => {
   );
 };
 
-export default SignupModal;
+export default SignUpModal;
