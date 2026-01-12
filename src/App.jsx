@@ -22,7 +22,7 @@ import AuthGuard from "../auth/AuthGuard";
 import BlogList from "./components/BlogList";
 import AdminDashboard from "./components/AdminDashboard";
 import Transfers from "./components/Transfers";
-import SignUpModal from "./components/SignUpModal";
+import SignupModal from "./components/SignupModal";
 
 
 const getUser = () => JSON.parse(localStorage.getItem("user"));
@@ -32,8 +32,8 @@ function App() {
 
   return (
     <Router>
-      <SignUpModal/>
-      
+      <SignupModal/>
+    \
       <LoginModal />
       <Routes>
         
@@ -41,7 +41,7 @@ function App() {
 
       
         <Route path="/loginpage" element={<LoginModal />} />
-        <Route path="/signuppage" element={<SignUpModal/>} />
+        <Route path="/signuppage" element={<SignupModal/>} />
 
       
         <Route
