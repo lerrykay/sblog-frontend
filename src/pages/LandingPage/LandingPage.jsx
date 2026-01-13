@@ -8,7 +8,7 @@ import Contact from "../../components/Contact";
 import LoginModal from "../../components/LoginModal";
  import SignupModal from "../../components/SignupModal";
 import MainFooter from "../../components/MainFooter";
-import Hero from "../../components/hero";
+import Hero from "../../components/Hero";
 
 
 
