@@ -7,7 +7,7 @@ import News from "../../components/News";
 import Contact from "../../components/Contact";
 import LoginModal from "../../components/LoginModal";
  import SignupModal from "../../components/SignupModal";
-import MainFooter from "../../components/mainFooter";
+import MainFooter from "../../components/MainFooter";
 import Hero from "../../components/hero";
 
 
