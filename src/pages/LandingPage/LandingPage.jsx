@@ -7,7 +7,7 @@ import About from "../../components/About";
 import News from "../../components/News";
 import Contact from "../../components/Contact";
 import LoginModal from "../../components/LoginModal";
-import SignupModal from "../../components/SignUpModal";
+ import SignupModal from "../../components/SignupModal";
 import MainFooter from "../../components/mainFooter";
 
 
