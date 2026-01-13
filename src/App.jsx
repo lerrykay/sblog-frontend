@@ -33,7 +33,6 @@ function App() {
   return (
     <Router>
       <SignupModal/>
-    \
       <LoginModal />
       <Routes>
         
