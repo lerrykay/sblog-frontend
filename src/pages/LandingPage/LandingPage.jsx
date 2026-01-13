@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./landingPage.css";
+import "./LandingPage.css";
 import Navbar from "../../components/Navbar";
 import Hero from "../../components/hero";
 import About from "../../components/About";
